@@ -1,0 +1,16 @@
+modLoader="javafml" #mandatory
+loaderVersion="[35,)" #mandatory
+license="All rights reserved" #mandatory https://choosealicense.com/
+
+[[mods]] #mandatory
+modId="officialmcsexmod" #mandatory
+version="6.9" #mandatory
+displayName="OfficialMCSexMod" #mandatory
+#displayURL="http://example.com/" #optional
+#logoFile="examplemod.png" #optional
+credits="To the retards who worked on this" #optional
+authors="_Moriz_" #optional
+description='''
+Come on you know what this is
+:)
+''' #mandatory
