@@ -2,9 +2,11 @@ package com.Moriz.OfficialMCSexMod;
 
 import com.Moriz.OfficialMCSexMod.core.init.block_init;
 import com.Moriz.OfficialMCSexMod.core.init.item_init;
+import com.Moriz.OfficialMCSexMod.world.OreGeneration;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -29,6 +31,8 @@ public class OfficialMCSexMod
         item_init.ITEMS.register(bus);
         block_init.BLOCKS.register(bus);
 
+        MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OreGeneration::generateOres);
+
         MinecraftForge.EVENT_BUS.register(this);
     }
 
@@ -42,7 +46,7 @@ public class OfficialMCSexMod
 
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(item_init.dildo_item.get());
+            return new ItemStack(item_init.dildo_item_purple.get());
         }
     }
 }

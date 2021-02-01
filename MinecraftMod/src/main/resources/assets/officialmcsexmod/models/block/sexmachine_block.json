@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all ": "officialmcsexmod:blocks/sexmachine_block"
-  }
-}

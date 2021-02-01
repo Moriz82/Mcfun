@@ -1,5 +1,17 @@
 {
-  "item.officialmcsexmod.dildo_item": "dildo",
-  "block.officialmcsexmod.sexmachine_block": "Sex Machine",
-  "itemGroup.officialmcsexmod": "OfficialMCSexMod"
+  "itemGroup.officialmcsexmod": "OfficialMCSexMod",
+  "item.officialmcsexmod.dildo_item_blue": "blue dildo",
+  "item.officialmcsexmod.dildo_item_green": "green dildo",
+  "item.officialmcsexmod.dildo_item_orange": "orange dildo",
+  "item.officialmcsexmod.dildo_item_pink": "pink dildo",
+  "item.officialmcsexmod.dildo_item_purple": "purple dildo",
+  "item.officialmcsexmod.dildo_item_red": "red dildo",
+  "item.officialmcsexmod.dildo_item_yellow": "yellow dildo",
+  "block.officialmcsexmod.block_o_cum_blue": "blue block-o-cum",
+  "block.officialmcsexmod.block_o_cum_green": "green block-o-cum",
+  "block.officialmcsexmod.block_o_cum_orange": "orange block-o-cum",
+  "block.officialmcsexmod.block_o_cum_pink": "pink block-o-cum",
+  "block.officialmcsexmod.block_o_cum_purple": "purple block-o-cum",
+  "block.officialmcsexmod.block_o_cum_red": "red block-o-cum",
+  "block.officialmcsexmod.block_o_cum_yellow": "yellow block-o-cum"
 }
