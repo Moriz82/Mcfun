@@ -8,10 +8,21 @@ public class ClientHandler implements Runnable {
 	private PrintWriter serverOutput;
 	private ArrayList<ClientHandler> clients;
 	private String username;
+	private Server_console server_console;
 
-	public ClientHandler(Socket clientSocket, ArrayList<ClientHandler> clients) throws IOException {
+	public ClientHandler(Socket clientSocket, ArrayList<ClientHandler> clients, Server_console server_console) throws IOException {
 		this.socket = clientSocket;
 		this.clients = clients;
+		this.server_console = server_console;
+		clientInput = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+		serverOutput = new PrintWriter(socket.getOutputStream(), true);
+	}
+
+	public ClientHandler(Socket clientSocket, ArrayList<ClientHandler> clients, Server_console server_console, String username) throws IOException {
+		this.socket = clientSocket;
+		this.clients = clients;
+		this.server_console = server_console;
+		this.username = username;
 		clientInput = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 		serverOutput = new PrintWriter(socket.getOutputStream(), true);
 	}
@@ -40,25 +51,32 @@ public class ClientHandler implements Runnable {
 				}
 			}
 		} catch (IOException e) {
-			System.err.println("IO exception in client handler");
-			e.printStackTrace();
+			System.err.println(username+" Timed out");
+			server_console.setConsole_chat(username+" Timed out \n");
+			//e.printStackTrace();
 		} finally {
 			try {
 				//close connections
 				socket.close();
 				serverOutput.close();
 				clientInput.close();
-				System.out.print("Connection closed with client");
+				System.out.print("Connection closed with"+username);
+				server_console.setConsole_chat("Connection closed with "+username+" \n\n");
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
 	}
 
-	private void chatToAll(String msg) {
+	public void chatToAll(String msg) {
 		for (ClientHandler aClient : clients) {
 			aClient.serverOutput.println("["+username+"]/> "+msg);
 		}
+		server_console.setConsole_chat("["+username+"]/> "+msg+" \n");
+	}
+
+	public String getUsername() {
+		return username;
 	}
 }
 

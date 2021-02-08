@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
 public class Server {
 
 
-	private static final int PORT = 6969;
+	/*private static final int PORT = 6969;
 
 	private static ArrayList<ClientHandler> clientThreads = new ArrayList<>();
 	private static ExecutorService pool = Executors.newFixedThreadPool(Integer.MAX_VALUE);
@@ -31,6 +31,8 @@ public class Server {
 		}
 
 	}
+	*/
+
 	public static String comparePeople(String name1, String name2) throws IOException{
 		Scanner scan = new Scanner(new File("names.txt"));
 		ArrayList<String> peoplez = new ArrayList<String>();

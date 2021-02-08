@@ -39,6 +39,7 @@
     <option name="projectConfigVersion" value="2" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Server_console.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Client.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1oA9WcLhF1GbJWz1qwWHLVGQDcG" />
@@ -49,6 +50,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="323" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -58,7 +60,7 @@
       <recent name="C:\Users\willi\Documents\GitHub\Mcfun\SocketPractice" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SecureForm">
+  <component name="RunManager" selected="Application.Server_console">
     <configuration name="Client" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Client" />
       <module name="SocketPractice" />
@@ -80,6 +82,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Server_console" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Server_console" />
+      <module name="SocketPractice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -95,6 +104,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Server_console" />
         <item itemvalue="Application.SecureForm" />
       </list>
     </recent_temporary>
@@ -111,7 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612718565946</updated>
       <workItem from="1612718567089" duration="10441000" />
-      <workItem from="1612733542869" duration="8371000" />
+      <workItem from="1612733542869" duration="24300000" />
     </task>
     <servers />
   </component>
@@ -131,26 +141,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="764" y="245" key="#com.intellij.ide.util.MemberChooser" timestamp="1612742045687">
+    <state x="764" y="245" key="#com.intellij.ide.util.MemberChooser" timestamp="1612805115604">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="764" y="245" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1612742045687" />
-    <state width="1877" height="294" key="GridCell.Tab.0.bottom" timestamp="1612744972409">
+    <state x="764" y="245" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1612805115604" />
+    <state x="722" y="241" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612798900290">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1612744972409" />
-    <state width="1877" height="294" key="GridCell.Tab.0.center" timestamp="1612744972409">
+    <state x="722" y="241" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1612798900290" />
+    <state width="1143" height="294" key="GridCell.Tab.0.bottom" timestamp="1612805877301">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="294" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1612744972409" />
-    <state width="1877" height="294" key="GridCell.Tab.0.left" timestamp="1612744972409">
+    <state width="1143" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1612805877301" />
+    <state width="1143" height="294" key="GridCell.Tab.0.center" timestamp="1612805877301">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="294" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1612744972409" />
-    <state width="1877" height="294" key="GridCell.Tab.0.right" timestamp="1612744972409">
+    <state width="1143" height="294" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1612805877301" />
+    <state width="1143" height="294" key="GridCell.Tab.0.left" timestamp="1612805877301">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="294" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1612744972409" />
+    <state width="1143" height="294" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1612805877301" />
+    <state width="1143" height="294" key="GridCell.Tab.0.right" timestamp="1612805877301">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1143" height="294" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1612805877301" />
     <state x="598" y="139" key="SettingsEditor" timestamp="1612718627136">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -159,5 +173,13 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="129" y="157" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1612729785146" />
+    <state x="138" y="106" key="new project wizard" timestamp="1612748257527">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="138" y="106" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1612748257527" />
+    <state x="1248" y="401" key="search.everywhere.popup" timestamp="1612799355334">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1248" y="401" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1612799355334" />
   </component>
 </project>

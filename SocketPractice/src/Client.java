@@ -4,14 +4,14 @@ import java.net.*;
 import java.util.*;
 
 public class Client {
-	//public static void main(String[] args) throws IOException {
-	public static void start(SecureForm secureForm ,String IPADDRESS, int PORT) throws IOException {
-		//String serverIP = "127.0.0.1";
-		//int serverPort = 6969;
+	public static void main(String[] args) throws IOException {
+	//public static void start(SecureForm secureForm ,String IPADDRESS, int PORT) throws IOException {
+		String serverIP = "127.0.0.1";
+		int serverPort = 6969;
 
-		Socket socket = new Socket(IPADDRESS, PORT);
+		Socket socket = new Socket(serverIP, serverPort);
 
-		ServerConnection serverConn = new ServerConnection(socket, secureForm);
+		ServerConnection serverConn = new ServerConnection(socket);
 
 		BufferedReader clientInput = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 		Scanner scan_input = new Scanner(System.in);
@@ -22,12 +22,12 @@ public class Client {
 		//connection message wait
 		String serverResponse = clientInput.readLine();
 		System.out.println(serverResponse);
-		secureForm.text_j.append(serverResponse);
+		//secureForm.text_j.append(serverResponse);
 
 		//username retreval msg
 		serverResponse = clientInput.readLine();
 		System.out.println(serverResponse);
-		secureForm.text_j.append(serverResponse);
+		//secureForm.text_j.append(serverResponse);
 
 		while (true) {
 			System.out.print("/> ");
