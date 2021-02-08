@@ -1,9 +1,11 @@
 package com.Moriz.OfficialMCSexMod.core.init;
 
 import com.Moriz.OfficialMCSexMod.OfficialMCSexMod;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -12,7 +14,15 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class item_init {
 	public static final ItemGroup SexModTab = OfficialMCSexMod.SEXMOD_TAB;
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, OfficialMCSexMod.MOD_ID);
-	//create example item
+
+	//create spawn eggs
+
+	public static final RegistryObject<SpawnEggItem> girl_test_egg = ITEMS.register("girl_test_egg",
+			() -> new SpawnEggItem(EntityType.VILLAGER, 0x8403fc, 0xeb03fc,
+					new Item.Properties().group(SexModTab)));
+
+	//create items
+
 	//blue
 	public static final RegistryObject<Item> dildo_item_blue = ITEMS.register("dildo_item_blue",
 			() -> new Item(new Item.Properties().group(SexModTab)));
