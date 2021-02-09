@@ -35,8 +35,8 @@ public class Server_console {
 		start_btn.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-					if (!start_brn_clicked){start_brn_clicked = true;}
-					new Thread(conUsers).start();
+				if (!start_brn_clicked){start_brn_clicked = true;}
+				new Thread(conUsers).start();
 			}
 		});
 		command_brn.addActionListener(new ActionListener() {
@@ -128,7 +128,7 @@ class con_users implements Runnable{
 				System.out.println("Client has connected!");
 				s.setConsole_chat("Client has connected! \n");
 
-				ClientHandler clientThread = new ClientHandler(client, clientThreads, s);
+				ClientHandler clientThread = new ClientHandler(client, clientThreads, s, this);
 				clientThreads.add(clientThread);
 
 				pool.execute(clientThread);
@@ -137,6 +137,10 @@ class con_users implements Runnable{
 		catch (IOException ev){
 			ev.printStackTrace();
 		}
+	}
+
+	public void sayAsSERVER(String message){
+		SERVER.chatToAll(message);
 	}
 
 	public void setIncomingPackets(ServerSocket incomingPackets) {

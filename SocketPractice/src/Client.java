@@ -6,7 +6,7 @@ import java.util.*;
 public class Client {
 	public static void main(String[] args) throws IOException {
 	//public static void start(SecureForm secureForm ,String IPADDRESS, int PORT) throws IOException {
-		String serverIP = "127.0.0.1";
+		String serverIP = "104.210.192.198";
 		int serverPort = 6969;
 
 		Socket socket = new Socket(serverIP, serverPort);

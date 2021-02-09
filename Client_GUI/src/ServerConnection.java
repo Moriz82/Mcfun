@@ -17,7 +17,7 @@ public class ServerConnection implements Runnable{
 		clientOutput = new PrintWriter(socket.getOutputStream(), true);
 	}
 
-	//here we override the defalt run method from the Runnable interface
+	//here we override the default run method from the Runnable interface
 	@Override
 	public void	run(){
 		//we use try/catch because we are using socket which can get sketchy
@@ -25,7 +25,7 @@ public class ServerConnection implements Runnable{
 			//checking for messages 24/7 and if there is one we add it to the chat
 			while (true){
 				String serverResponse = serverInput.readLine();
-				if (serverResponse == null) break;
+				if (serverResponse == null) {break;}
 
 				System.out.println(serverResponse);
 				secure_Chat.setChat_Area(serverResponse+"\n");

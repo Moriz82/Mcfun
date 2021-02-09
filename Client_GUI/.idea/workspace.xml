@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Client_GUI:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -57,23 +62,17 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="336" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propGUI" />
   </component>
   <component name="RunManager">
     <configuration name="Secure_Form" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Secure_Form" />
       <module name="Client_GUI" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,6 +95,9 @@
       <option name="presentableId" value="Default" />
       <updated>1612748260579</updated>
       <workItem from="1612748262148" duration="15589000" />
+      <workItem from="1612824153150" duration="2702000" />
+      <workItem from="1612827261775" duration="8367000" />
+      <workItem from="1612845320743" duration="109000" />
     </task>
     <servers />
   </component>
@@ -112,6 +114,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="737" y="202" key="#com.intellij.codeInsight.i18n.I18nizeQuickFixDialog_Form" timestamp="1612797211530">
@@ -122,22 +125,34 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="764" y="255" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1612753911344" />
-    <state width="914" height="185" key="GridCell.Tab.0.bottom" timestamp="1612805878713">
+    <state x="673" y="355" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1612836264032">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="185" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1612805878713" />
-    <state width="914" height="185" key="GridCell.Tab.0.center" timestamp="1612805878713">
+    <state x="673" y="355" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1612836264032" />
+    <state x="266" y="350" key="FileChooserDialogImpl" timestamp="1612832448469">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="185" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1612805878713" />
-    <state width="914" height="185" key="GridCell.Tab.0.left" timestamp="1612805878713">
+    <state x="266" y="350" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1612832448469" />
+    <state width="914" height="242" key="GridCell.Tab.0.bottom" timestamp="1612845430924">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="185" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1612805878713" />
-    <state width="914" height="185" key="GridCell.Tab.0.right" timestamp="1612805878713">
+    <state width="914" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1612845430924" />
+    <state width="914" height="242" key="GridCell.Tab.0.center" timestamp="1612845430924">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="185" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1612805878713" />
+    <state width="914" height="242" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1612845430924" />
+    <state width="914" height="242" key="GridCell.Tab.0.left" timestamp="1612845430924">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="242" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1612845430924" />
+    <state width="914" height="242" key="GridCell.Tab.0.right" timestamp="1612845430924">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="242" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1612845430924" />
+    <state x="662" y="177" width="1042" height="846" key="SettingsEditor" timestamp="1612836269662">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="662" y="177" width="1042" height="846" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1612836269662" />
     <state x="129" y="157" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1612753008745">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

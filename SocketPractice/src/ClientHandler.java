@@ -9,10 +9,12 @@ public class ClientHandler implements Runnable {
 	private ArrayList<ClientHandler> clients;
 	private String username;
 	private Server_console server_console;
+	private con_users conUsers;
 
-	public ClientHandler(Socket clientSocket, ArrayList<ClientHandler> clients, Server_console server_console) throws IOException {
+	public ClientHandler(Socket clientSocket, ArrayList<ClientHandler> clients, Server_console server_console, con_users conUsers) throws IOException {
 		this.socket = clientSocket;
 		this.clients = clients;
+		this.conUsers = conUsers;
 		this.server_console = server_console;
 		clientInput = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 		serverOutput = new PrintWriter(socket.getOutputStream(), true);
@@ -33,6 +35,7 @@ public class ClientHandler implements Runnable {
 			serverOutput.println("[Server]/> Server Connection Established!");
 			serverOutput.println("[Server]/> Please Enter a Username: ");
 			username = clientInput.readLine();
+			conUsers.sayAsSERVER(username+" has joined the chat room");
 			while (true) {
 				String commandRequest = clientInput.readLine();
 

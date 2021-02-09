@@ -61,7 +61,7 @@
             <properties>
               <background color="-11382188"/>
               <foreground color="-16777216"/>
-              <text value="127.0.0.1"/>
+              <text value="104.210.192.198"/>
             </properties>
           </component>
           <component id="83332" class="javax.swing.JLabel" binding="ipLabel">
