@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/Client_GUI_jar</output-path>
     <root id="archive" name="Client_GUI.jar">
       <element id="module-output" name="Client_GUI" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/lib/forms_rt.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

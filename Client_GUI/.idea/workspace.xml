@@ -24,7 +24,39 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64d5f539-4c98-4ae3-a9cc-4b61a73e56da" name="Default Changelist" comment="" />
+    <list default="true" id="64d5f539-4c98-4ae3-a9cc-4b61a73e56da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_drjekyll_colorpicker_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/colorpicker-1.3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Client_GUI_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Client_GUI_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client_GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Client_GUI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Client_GUI_jar/Client_GUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Client_GUI_jar/Client_GUI.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client_GUI/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client_GUI/Secure_Chat$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client_GUI/Secure_Chat$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client_GUI/Secure_Chat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client_GUI/Secure_Chat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client_GUI/Secure_Form$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client_GUI/Secure_Form$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client_GUI/Secure_Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client_GUI/Secure_Form.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client_GUI/ServerConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client_GUI/ServerConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client_GUI/java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Secure_Chat.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Secure_Chat.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Secure_Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Secure_Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Secure_Form.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Secure_Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Secure_Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServerConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServerConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketPractice/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketPractice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketPractice/SocketPractice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/SocketPractice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/Server_console$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/Server_console$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/Server_console$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/Server_console$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/Server_console.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/Server_console.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/con_users.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/con_users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketPractice/src/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/src/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketPractice/src/Server_console.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/src/Server_console.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,22 +89,41 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="148" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="336" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/forms_rt.jar" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propGUI" />
   </component>
   <component name="RunManager">
-    <configuration name="Secure_Form" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Secure_Form" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Secure_Form" />
       <module name="Client_GUI" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,6 +149,8 @@
       <workItem from="1612824153150" duration="2702000" />
       <workItem from="1612827261775" duration="8367000" />
       <workItem from="1612845320743" duration="109000" />
+      <workItem from="1613144047678" duration="2431000" />
+      <workItem from="1613147260345" duration="15097000" />
     </task>
     <servers />
   </component>
@@ -121,41 +174,97 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="737" y="202" key="#com.intellij.codeInsight.i18n.I18nizeQuickFixDialog_Form/0.0.1920.1080@0.0.1920.1080" timestamp="1612797211530" />
-    <state x="764" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1612753911344">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="136" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613166458955">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="136" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1613166458955" />
+    <state x="544" y="179" key="#com.intellij.ide.util.MemberChooser" timestamp="1613150804609">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="544" y="179" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1613150804609" />
     <state x="764" y="255" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1612753911344" />
-    <state x="673" y="355" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1612836264032">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="479" y="252" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1613150742250">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="479" y="252" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.768@0.0.1366.768" timestamp="1613150742250" />
     <state x="673" y="355" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1612836264032" />
-    <state x="266" y="350" key="FileChooserDialogImpl" timestamp="1612832448469">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="477" y="97" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1613150641657">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="477" y="97" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1366.768@0.0.1366.768" timestamp="1613150641657" />
+    <state x="556" y="267" key="#com.intellij.uiDesigner.palette.ComponentItemDialog.OneOff" timestamp="1613150747785">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="556" y="267" key="#com.intellij.uiDesigner.palette.ComponentItemDialog.OneOff/0.0.1366.768@0.0.1366.768" timestamp="1613150747785" />
+    <state x="189" y="185" key="FileChooserDialogImpl" timestamp="1613144666935">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="189" y="185" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1613144666935" />
     <state x="266" y="350" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1612832448469" />
-    <state width="914" height="242" key="GridCell.Tab.0.bottom" timestamp="1612845430924">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1321" height="130" key="GridCell.Tab.0.bottom" timestamp="1613166572617">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state width="1321" height="130" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1613166572617" />
     <state width="914" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1612845430924" />
-    <state width="914" height="242" key="GridCell.Tab.0.center" timestamp="1612845430924">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1321" height="130" key="GridCell.Tab.0.center" timestamp="1613166572617">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state width="1321" height="130" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1613166572617" />
     <state width="914" height="242" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1612845430924" />
-    <state width="914" height="242" key="GridCell.Tab.0.left" timestamp="1612845430924">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1321" height="130" key="GridCell.Tab.0.left" timestamp="1613166572617">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state width="1321" height="130" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1613166572617" />
     <state width="914" height="242" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1612845430924" />
-    <state width="914" height="242" key="GridCell.Tab.0.right" timestamp="1612845430924">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1321" height="130" key="GridCell.Tab.0.right" timestamp="1613166572617">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state width="1321" height="130" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1613166572617" />
     <state width="914" height="242" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1612845430924" />
-    <state x="662" y="177" width="1042" height="846" key="SettingsEditor" timestamp="1612836269662">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1321" height="238" key="GridCell.Tab.1.bottom" timestamp="1613166572570">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state width="1321" height="238" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1613166572570" />
+    <state width="1321" height="238" key="GridCell.Tab.1.center" timestamp="1613166572570">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1321" height="238" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1613166572570" />
+    <state width="1321" height="238" key="GridCell.Tab.1.left" timestamp="1613166572570">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1321" height="238" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1613166572570" />
+    <state width="1321" height="238" key="GridCell.Tab.1.right" timestamp="1613166572570">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1321" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1613166572570" />
+    <state x="190" y="33" width="916" height="708" key="SettingsEditor" timestamp="1613150645219">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="190" y="33" width="916" height="708" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1613150645219" />
     <state x="662" y="177" width="1042" height="846" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1612836269662" />
+    <state x="460" y="227" key="cloudConfig.PluginsDialog" timestamp="1613148502848">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="460" y="227" key="cloudConfig.PluginsDialog/0.0.1366.768@0.0.1366.768" timestamp="1613148502848" />
+    <state x="554" y="227" key="cloudConfig.SelfSettingsDialog" timestamp="1613148498579">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="554" y="227" key="cloudConfig.SelfSettingsDialog/0.0.1366.768@0.0.1366.768" timestamp="1613148498579" />
+    <state x="351" y="278" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1613150637128">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="351" y="278" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.768@0.0.1366.768" timestamp="1613150637128" />
     <state x="129" y="157" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1612753008745">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="129" y="157" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1612753008745" />
+    <state x="129" y="0" key="new project wizard" timestamp="1613145052407">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="129" y="0" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1613145052407" />
+    <state x="477" y="130" key="refactoring.ChangeSignatureDialog" timestamp="1613161219684">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="477" y="130" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1613161219684" />
   </component>
 </project>

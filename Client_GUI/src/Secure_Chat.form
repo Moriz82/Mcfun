@@ -10,7 +10,7 @@
     </properties>
     <border type="none"/>
     <children>
-      <scrollpane id="b43ec">
+      <scrollpane id="b43ec" binding="mainPane">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -19,13 +19,11 @@
         </properties>
         <border type="none"/>
         <children>
-          <component id="f2305" class="javax.swing.JTextArea" binding="Chat_Area">
+          <component id="6f37a" class="javax.swing.JTextPane" binding="mainTextPane">
             <constraints/>
             <properties>
               <background color="-11382188"/>
               <editable value="false"/>
-              <foreground color="-5066062"/>
-              <text value=""/>
             </properties>
           </component>
         </children>

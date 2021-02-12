@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.io.*;
 import java.net.*;
 import java.util.*;
@@ -7,9 +8,12 @@ public class ClientHandler implements Runnable {
 	private BufferedReader clientInput;
 	private PrintWriter serverOutput;
 	private ArrayList<ClientHandler> clients;
-	private String username;
 	private Server_console server_console;
 	private con_users conUsers;
+
+	private String username;
+	private Color color;
+	private float[] colorHSB = {0f,0f,0f};
 
 	public ClientHandler(Socket clientSocket, ArrayList<ClientHandler> clients, Server_console server_console, con_users conUsers) throws IOException {
 		this.socket = clientSocket;
@@ -20,9 +24,10 @@ public class ClientHandler implements Runnable {
 		serverOutput = new PrintWriter(socket.getOutputStream(), true);
 	}
 
-	public ClientHandler(Socket clientSocket, ArrayList<ClientHandler> clients, Server_console server_console, String username) throws IOException {
+	public ClientHandler(Socket clientSocket, ArrayList<ClientHandler> clients, Server_console server_console, String username, Color color) throws IOException {
 		this.socket = clientSocket;
 		this.clients = clients;
+		this.color = color;
 		this.server_console = server_console;
 		this.username = username;
 		clientInput = new BufferedReader(new InputStreamReader(socket.getInputStream()));
@@ -35,7 +40,15 @@ public class ClientHandler implements Runnable {
 			serverOutput.println("[Server]/> Server Connection Established!");
 			serverOutput.println("[Server]/> Please Enter a Username: ");
 			username = clientInput.readLine();
+			serverOutput.println("[Server]/> Please Enter a Color: ");
+
+			String[] nums = clientInput.readLine().split("[=,]");
+			float[] colorHSB = { Float.parseFloat(nums[0].substring(1)) , Float.parseFloat(nums[1]) , Float.parseFloat(nums[2].substring(0,nums[2].indexOf("]")))};
+			this.colorHSB = colorHSB;
+			color = Color.getHSBColor(Float.parseFloat(nums[0].substring(1)) , Float.parseFloat(nums[1]) , Float.parseFloat(nums[2].substring(0,nums[2].indexOf("]"))));
+
 			conUsers.sayAsSERVER(username+" has joined the chat room");
+
 			while (true) {
 				String commandRequest = clientInput.readLine();
 
@@ -44,9 +57,9 @@ public class ClientHandler implements Runnable {
 					String[] arguments = commandRequest.split(" ");
 
 					if (arguments.length != 3) {
-						serverOutput.println("[Server]/> Error: Invalid Argument");
+						serverOutput.println(Arrays.toString(colorHSB)+"~~~~"+username+"[Server]/> Error: Invalid Argument");
 					} else {
-						serverOutput.println("[Server]/> "+Server.comparePeople(arguments[1], arguments[2]));
+						serverOutput.println(Arrays.toString(colorHSB)+"~~~~"+username+"[Server]/> "+Server.comparePeople(arguments[1], arguments[2]));
 					}
 				}
 				else{
@@ -73,7 +86,7 @@ public class ClientHandler implements Runnable {
 
 	public void chatToAll(String msg) {
 		for (ClientHandler aClient : clients) {
-			aClient.serverOutput.println("["+username+"]/> "+msg);
+			aClient.serverOutput.println(Arrays.toString(colorHSB)+"~~~~"+"["+username+"]/> "+msg);
 		}
 		server_console.setConsole_chat("["+username+"]/> "+msg+" \n");
 	}

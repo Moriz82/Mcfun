@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.io.*;
 import java.net.*;
 import java.util.*;
@@ -8,6 +9,7 @@ public class ServerConnection implements Runnable{
 	private BufferedReader serverInput;
 	private PrintWriter clientOutput;
 	private Secure_Chat secure_Chat;
+	private Color color;
 
 	//the constructor of course
 	public ServerConnection(Socket s,Secure_Chat secure_Chat) throws IOException{
@@ -28,7 +30,13 @@ public class ServerConnection implements Runnable{
 				if (serverResponse == null) {break;}
 
 				System.out.println(serverResponse);
-				secure_Chat.setChat_Area(serverResponse+"\n");
+				String[] message = serverResponse.split("~~~~");
+
+				String[] nums = message[0].split(",");
+
+				color = Color.getHSBColor(Float.parseFloat(nums[0].substring(1)) , Float.parseFloat(nums[1]) , Float.parseFloat(nums[2].substring(0,nums[2].indexOf("]"))));
+
+				secure_Chat.addText(message[1]+"\n", color);
 			}
 		}
 		catch (IOException e){

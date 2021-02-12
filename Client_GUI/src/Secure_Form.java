@@ -1,24 +1,29 @@
+import com.bric.colorpicker.ColorPicker;
+import com.intellij.uiDesigner.core.GridConstraints;
+import com.intellij.uiDesigner.core.GridLayoutManager;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class Secure_Form {
 	private JPanel leftPanel;
 	private JButton join_btn;
-	private JTextField portField;
 	private JTextField userField;
-	private JTextField ipField;
-	private JLabel ipLabel;
-	private JLabel portLabel;
+	private JLabel serverLabel;
 	private JLabel userLabel;
+	private JComboBox serverComboBox;
+	private JLabel colorLabel;
+	private JButton colorBtn;
 
 	private static JFrame frame;
 
 	static String IP_ADDRESS;
-	static int PORT;
+	static final int PORT = 6969;
 	static String USERNAME;
+	static float[] COLOR = {0f, 0f, 0f};
 
 	public static void main(String[] args) {
 
@@ -33,14 +38,26 @@ public class Secure_Form {
 	}
 
 	public Secure_Form() {
+
+		//add server selections
+		serverComboBox.addItem("Server 1");
+		serverComboBox.addItem("Local Host");
+
 		//event listener for the join button that grabs all filled in fields
 		join_btn.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				System.out.println(Arrays.toString(COLOR));
 
-				IP_ADDRESS = ipField.getText();
-				PORT = Integer.parseInt(portField.getText());
+				switch (serverComboBox.getSelectedIndex()) {
+					case 0:
+						IP_ADDRESS = "13.68.225.53";
+					case 1:
+						IP_ADDRESS = "127.0.0.1";
+				}
+
 				USERNAME = userField.getText();
+
 
 				// after that we create the new chat window
 				// we also use try/catch statement for the Socket declaration in Secure_Chat()'s constructor
@@ -57,6 +74,22 @@ public class Secure_Form {
 
 				//and for more style points we close the old window :)
 				Secure_Form.frame.setVisible(false);
+			}
+		});
+		colorBtn.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JFrame frame = new JFrame("ColorPicker Example");
+				frame.setSize(600, 400);
+
+				ColorPicker colorPicker = new ColorPicker(false, false);
+				colorPicker.setColor(Color.BLACK);
+
+				colorPicker.addColorListener(colorModel -> COLOR = colorModel.getHSB());
+				colorPicker.getColorPanel().setBackground(Color.darkGray);
+				frame.add(colorPicker);
+				frame.setVisible(true);
+
 			}
 		});
 	}
@@ -77,43 +110,63 @@ public class Secure_Form {
 	 */
 	private void $$$setupUI$$$() {
 		final JPanel panel1 = new JPanel();
-		panel1.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
+		panel1.setLayout(new GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
 		leftPanel = new JPanel();
-		leftPanel.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(4, 3, new Insets(0, 0, 0, 0), -1, -1, false, true));
+		leftPanel.setLayout(new GridLayoutManager(4, 3, new Insets(0, 0, 0, 0), -1, -1));
 		leftPanel.setBackground(new Color(-11776947));
-		panel1.add(leftPanel, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
+		panel1.add(leftPanel, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
 		join_btn = new JButton();
 		join_btn.setBackground(new Color(-11382188));
 		join_btn.setForeground(new Color(-5066062));
 		join_btn.setText("Join Chat");
-		leftPanel.add(join_btn, new com.intellij.uiDesigner.core.GridConstraints(3, 1, 1, 2, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-		portField = new JTextField();
-		portField.setBackground(new Color(-11382188));
-		portField.setForeground(new Color(-16777216));
-		portField.setText("6969");
-		leftPanel.add(portField, new com.intellij.uiDesigner.core.GridConstraints(1, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+		leftPanel.add(join_btn, new GridConstraints(3, 1, 1, 2, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
 		userField = new JTextField();
 		userField.setBackground(new Color(-11382188));
 		userField.setForeground(new Color(-16777216));
 		userField.setText("user");
-		leftPanel.add(userField, new com.intellij.uiDesigner.core.GridConstraints(2, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-		ipField = new JTextField();
-		ipField.setBackground(new Color(-11382188));
-		ipField.setForeground(new Color(-16777216));
-		ipField.setText("104.210.192.198");
-		leftPanel.add(ipField, new com.intellij.uiDesigner.core.GridConstraints(0, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-		ipLabel = new JLabel();
-		ipLabel.setBackground(new Color(-11776947));
-		ipLabel.setText("Ip Address");
-		leftPanel.add(ipLabel, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-		portLabel = new JLabel();
-		portLabel.setBackground(new Color(-11776947));
-		portLabel.setText("Port");
-		leftPanel.add(portLabel, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+		leftPanel.add(userField, new GridConstraints(1, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+		serverLabel = new JLabel();
+		serverLabel.setBackground(new Color(-11776947));
+		serverLabel.setText("  Server");
+		leftPanel.add(serverLabel, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
 		userLabel = new JLabel();
 		userLabel.setBackground(new Color(-11776947));
 		userLabel.setEnabled(true);
 		userLabel.setText("Username");
-		leftPanel.add(userLabel, new com.intellij.uiDesigner.core.GridConstraints(2, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+		leftPanel.add(userLabel, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+		serverComboBox = new JComboBox();
+		serverComboBox.setBackground(new Color(-11776947));
+		serverComboBox.setEditable(false);
+		Font serverComboBoxFont = this.$$$getFont$$$(null, -1, -1, serverComboBox.getFont());
+		if (serverComboBoxFont != null) serverComboBox.setFont(serverComboBoxFont);
+		serverComboBox.setForeground(new Color(-5066062));
+		leftPanel.add(serverComboBox, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+		colorLabel = new JLabel();
+		colorLabel.setBackground(new Color(-11776947));
+		colorLabel.setText("Color");
+		leftPanel.add(colorLabel, new GridConstraints(2, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+		colorBtn = new JButton();
+		colorBtn.setText("Choose color");
+		leftPanel.add(colorBtn, new GridConstraints(2, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
 	}
+
+	/**
+	 * @noinspection ALL
+	 */
+	private Font $$$getFont$$$(String fontName, int style, int size, Font currentFont) {
+		if (currentFont == null) return null;
+		String resultName;
+		if (fontName == null) {
+			resultName = currentFont.getName();
+		} else {
+			Font testFont = new Font(fontName, Font.PLAIN, 10);
+			if (testFont.canDisplay('a') && testFont.canDisplay('1')) {
+				resultName = fontName;
+			} else {
+				resultName = currentFont.getName();
+			}
+		}
+		return new Font(resultName, style >= 0 ? style : currentFont.getStyle(), size >= 0 ? size : currentFont.getSize());
+	}
+
 }
