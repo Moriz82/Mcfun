@@ -11,6 +11,8 @@ public class ServerConnection implements Runnable{
 	private Secure_Chat secure_Chat;
 	private Color color;
 
+	private static int passNum;
+
 	//the constructor of course
 	public ServerConnection(Socket s,Secure_Chat secure_Chat) throws IOException{
 		socket = s;
@@ -30,6 +32,10 @@ public class ServerConnection implements Runnable{
 				if (serverResponse == null) {break;}
 
 				System.out.println(serverResponse);
+
+				serverResponse = encryptDecryptXOR(serverResponse);
+				passNum++;
+
 				String[] message = serverResponse.split("~~~~");
 
 				String[] nums = message[0].split(",");
@@ -53,5 +59,25 @@ public class ServerConnection implements Runnable{
 				e.printStackTrace();
 			}
 		}
+	}
+	public static String encryptDecryptXOR(String inputStr){
+		String[] xorKeys = {"sdERIUVB","JVNRU", " irgh eriuwh", "slafEUGISV"};
+		String outputStr = "";
+		int keyIndex = 0;
+
+		if (passNum > xorKeys.length-1){
+			passNum = 0;
+		}
+
+		for (int i = 0; i < inputStr.length(); i++)
+		{
+			keyIndex++;
+			if (xorKeys.length-1 < keyIndex){
+				keyIndex = 0;
+			}
+			outputStr += Character.toString((char) (inputStr.charAt(i) ^ xorKeys[passNum].charAt(keyIndex)));
+		}
+
+		return outputStr;
 	}
 }

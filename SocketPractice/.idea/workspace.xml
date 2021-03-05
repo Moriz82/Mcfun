@@ -25,34 +25,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c95a976-d1f4-479d-ae94-d3fce39a863b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Client_GUI/.idea/libraries/org_drjekyll_colorpicker_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client_GUI/lib/colorpicker-1.3.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_GUI/.idea/artifacts/Client_GUI_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/.idea/artifacts/Client_GUI_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_GUI/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client_GUI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_GUI/Client_GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/Client_GUI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client_GUI/out/artifacts/Client_GUI_jar/Client_GUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/out/artifacts/Client_GUI_jar/Client_GUI.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_GUI/out/production/Client_GUI/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client_GUI/out/production/Client_GUI/Secure_Chat$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/out/production/Client_GUI/Secure_Chat$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_GUI/out/production/Client_GUI/Secure_Chat$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/out/production/Client_GUI/Secure_Chat$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client_GUI/out/production/Client_GUI/Secure_Chat.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/out/production/Client_GUI/Secure_Chat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_GUI/out/production/Client_GUI/Secure_Form$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/out/production/Client_GUI/Secure_Form$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_GUI/out/production/Client_GUI/Secure_Form$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/out/production/Client_GUI/Secure_Form$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client_GUI/out/production/Client_GUI/Secure_Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/out/production/Client_GUI/Secure_Form.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_GUI/out/production/Client_GUI/ServerConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/out/production/Client_GUI/ServerConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_GUI/out/production/Client_GUI/java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_GUI/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_GUI/src/Secure_Chat.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/src/Secure_Chat.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client_GUI/src/Secure_Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/src/Secure_Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_GUI/src/Secure_Form.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_GUI/src/Secure_Form.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/src/Secure_Form.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client_GUI/src/Secure_Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/src/Secure_Form.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client_GUI/src/ServerConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_GUI/src/ServerConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_GUI/src/java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SocketPractice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SocketPractice.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SocketPractice/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SocketPractice/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SocketPractice/Server_console$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SocketPractice/Server_console$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SocketPractice/Server_console$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SocketPractice/Server_console$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SocketPractice/Server_console.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SocketPractice/Server_console.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SocketPractice/con_users.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SocketPractice/con_users.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Server_console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server_console.java" afterDir="false" />
@@ -157,6 +142,8 @@
       <workItem from="1612827317614" duration="4934000" />
       <workItem from="1613144056933" duration="1574000" />
       <workItem from="1613147259844" duration="10512000" />
+      <workItem from="1613174298279" duration="3974000" />
+      <workItem from="1614378121120" duration="31000" />
     </task>
     <servers />
   </component>
@@ -196,25 +183,25 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="550" y="124" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1613145479569" />
-    <state width="1321" height="191" key="GridCell.Tab.0.bottom" timestamp="1613166576772">
+    <state width="1320" height="191" key="GridCell.Tab.0.bottom" timestamp="1614232992511">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1321" height="191" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1613166576772" />
+    <state width="1320" height="191" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1614232992511" />
     <state width="914" height="350" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1612836733482" />
-    <state width="1321" height="191" key="GridCell.Tab.0.center" timestamp="1613166576772">
+    <state width="1320" height="191" key="GridCell.Tab.0.center" timestamp="1614232992511">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1321" height="191" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1613166576772" />
+    <state width="1320" height="191" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1614232992511" />
     <state width="914" height="350" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1612836733482" />
-    <state width="1321" height="191" key="GridCell.Tab.0.left" timestamp="1613166576772">
+    <state width="1320" height="191" key="GridCell.Tab.0.left" timestamp="1614232992511">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1321" height="191" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1613166576772" />
+    <state width="1320" height="191" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1614232992511" />
     <state width="914" height="350" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1612836733482" />
-    <state width="1321" height="191" key="GridCell.Tab.0.right" timestamp="1613166576772">
+    <state width="1320" height="191" key="GridCell.Tab.0.right" timestamp="1614232992511">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1321" height="191" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1613166576772" />
+    <state width="1320" height="191" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1614232992511" />
     <state width="914" height="350" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1612836733482" />
     <state x="324" y="0" key="SettingsEditor" timestamp="1613145607405">
       <screen x="0" y="0" width="1366" height="768" />

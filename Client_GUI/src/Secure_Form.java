@@ -80,14 +80,22 @@ public class Secure_Form {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				JFrame frame = new JFrame("ColorPicker Example");
-				frame.setSize(600, 400);
+				JPanel panel = new JPanel();
 
-				ColorPicker colorPicker = new ColorPicker(false, false);
-				colorPicker.setColor(Color.BLACK);
-
+				ColorPicker colorPicker = new ColorPicker();
+				colorPicker.setColor(Color.blue);
 				colorPicker.addColorListener(colorModel -> COLOR = colorModel.getHSB());
-				colorPicker.getColorPanel().setBackground(Color.darkGray);
-				frame.add(colorPicker);
+
+				frame.setSize(600, 400);
+				frame.setBackground(Color.darkGray);
+				frame.setForeground(Color.lightGray);
+				panel.setBackground(Color.darkGray);
+				panel.setForeground(Color.lightGray);
+				colorPicker.setBackground(Color.darkGray);
+				colorPicker.setForeground(Color.lightGray);
+
+				panel.add(colorPicker);
+				frame.add(panel);
 				frame.setVisible(true);
 
 			}

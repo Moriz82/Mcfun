@@ -187,7 +187,7 @@ class con_users implements Runnable{
 	public con_users(Server_console ss) throws IOException{
 		s = ss;
 		incomingPackets = new ServerSocket(s.getPORT());
-		SERVER = new ClientHandler(new Socket("127.0.0.1",6969),con_users.getClientThreads(), s, "SERVER",Color.BLACK);
+		SERVER = new ClientHandler(new Socket("127.0.0.1",6969),con_users.getClientThreads(), s, "Server",Color.BLACK);
 	}
 
 	@Override

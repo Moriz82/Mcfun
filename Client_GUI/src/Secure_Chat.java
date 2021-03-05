@@ -2,10 +2,7 @@ import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 
 import javax.swing.*;
-import javax.swing.text.AttributeSet;
-import javax.swing.text.SimpleAttributeSet;
-import javax.swing.text.StyleConstants;
-import javax.swing.text.StyleContext;
+import javax.swing.text.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -68,7 +65,10 @@ public class Secure_Chat {
 			public void actionPerformed(ActionEvent e) {
 				//takes in the message from the user and send it to the server
 				String message = message_box.getText();
-				clientOutput.println(Arrays.toString(Secure_Form.COLOR) + "~~~~" + message);
+
+				message = ServerConnection.encryptDecryptXOR(message);
+
+				clientOutput.println(message);
 				message_box.setText("");
 			}
 		});
@@ -87,6 +87,7 @@ public class Secure_Chat {
 	private void appendToPane(JTextPane tp, String msg, Color c) {
 		StyleContext sc = StyleContext.getDefaultStyleContext();
 		AttributeSet aset = sc.addAttribute(SimpleAttributeSet.EMPTY, StyleConstants.Foreground, c);
+		StyledDocument doc = tp.getStyledDocument();
 
 		aset = sc.addAttribute(aset, StyleConstants.FontFamily, "Lucida Console");
 		aset = sc.addAttribute(aset, StyleConstants.Alignment, StyleConstants.ALIGN_JUSTIFIED);
@@ -94,8 +95,12 @@ public class Secure_Chat {
 		int len = tp.getDocument().getLength();
 		tp.setCaretPosition(len);
 		tp.setCharacterAttributes(aset, false);
-		tp.replaceSelection(msg);
-		tp.setText(tp.getText() + msg);
+
+		try {
+			doc.insertString(len, msg, aset);
+		} catch (BadLocationException e) {
+			e.printStackTrace();
+		}
 	}
 	//gets and sets of course :)
 

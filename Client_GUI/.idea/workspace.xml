@@ -25,34 +25,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64d5f539-4c98-4ae3-a9cc-4b61a73e56da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_drjekyll_colorpicker_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/colorpicker-1.3.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Client_GUI_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Client_GUI_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client_GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Client_GUI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Client_GUI_jar/Client_GUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Client_GUI_jar/Client_GUI.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Client_GUI/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Client_GUI/Secure_Chat$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client_GUI/Secure_Chat$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Client_GUI/Secure_Chat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client_GUI/Secure_Chat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Client_GUI/Secure_Form$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client_GUI/Secure_Form$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Client_GUI/Secure_Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client_GUI/Secure_Form.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Client_GUI/ServerConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client_GUI/ServerConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Client_GUI/java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Secure_Chat.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Secure_Chat.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Secure_Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Secure_Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Secure_Form.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Secure_Form.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Secure_Form.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Secure_Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Secure_Form.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ServerConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServerConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketPractice/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SocketPractice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketPractice/SocketPractice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/SocketPractice.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/Server_console$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/Server_console$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/Server_console$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/Server_console$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/Server_console.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/Server_console.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/con_users.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/out/production/SocketPractice/con_users.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SocketPractice/src/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/src/ClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SocketPractice/src/Server_console.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketPractice/src/Server_console.java" afterDir="false" />
@@ -115,19 +98,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Secure_Form" />
@@ -151,6 +121,7 @@
       <workItem from="1612845320743" duration="109000" />
       <workItem from="1613144047678" duration="2431000" />
       <workItem from="1613147260345" duration="15097000" />
+      <workItem from="1613174325786" duration="3252000" />
     </task>
     <servers />
   </component>
@@ -201,25 +172,25 @@
     </state>
     <state x="189" y="185" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1613144666935" />
     <state x="266" y="350" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1612832448469" />
-    <state width="1321" height="130" key="GridCell.Tab.0.bottom" timestamp="1613166572617">
+    <state width="1320" height="130" key="GridCell.Tab.0.bottom" timestamp="1614232990920">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1321" height="130" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1613166572617" />
+    <state width="1320" height="130" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1614232990920" />
     <state width="914" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1612845430924" />
-    <state width="1321" height="130" key="GridCell.Tab.0.center" timestamp="1613166572617">
+    <state width="1320" height="130" key="GridCell.Tab.0.center" timestamp="1614232990920">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1321" height="130" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1613166572617" />
+    <state width="1320" height="130" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1614232990920" />
     <state width="914" height="242" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1612845430924" />
-    <state width="1321" height="130" key="GridCell.Tab.0.left" timestamp="1613166572617">
+    <state width="1320" height="130" key="GridCell.Tab.0.left" timestamp="1614232990920">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1321" height="130" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1613166572617" />
+    <state width="1320" height="130" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1614232990920" />
     <state width="914" height="242" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1612845430924" />
-    <state width="1321" height="130" key="GridCell.Tab.0.right" timestamp="1613166572617">
+    <state width="1320" height="130" key="GridCell.Tab.0.right" timestamp="1614232990920">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1321" height="130" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1613166572617" />
+    <state width="1320" height="130" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1614232990920" />
     <state width="914" height="242" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1612845430924" />
     <state width="1321" height="238" key="GridCell.Tab.1.bottom" timestamp="1613166572570">
       <screen x="0" y="0" width="1366" height="768" />

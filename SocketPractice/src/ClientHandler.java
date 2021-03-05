@@ -47,7 +47,8 @@ public class ClientHandler implements Runnable {
 			this.colorHSB = colorHSB;
 			color = Color.getHSBColor(Float.parseFloat(nums[0].substring(1)) , Float.parseFloat(nums[1]) , Float.parseFloat(nums[2].substring(0,nums[2].indexOf("]"))));
 
-			conUsers.sayAsSERVER(username+" has joined the chat room");
+			//conUsers.sayAsSERVER(username+" has joined the chat room");
+			serverOutput.println(Arrays.toString(colorHSB)+"~~~~"+"[Server]/> "+username+" has joined the chat room!");
 
 			while (true) {
 				String commandRequest = clientInput.readLine();
